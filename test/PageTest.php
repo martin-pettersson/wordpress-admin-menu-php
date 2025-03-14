@@ -39,5 +39,8 @@ final class PageTest extends TestCase
         $this->assertEquals('manage_options', $this->page->capability());
         $this->assertEquals('', $this->page->icon());
         $this->assertNull($this->page->position());
+
+        // Should be a noop.
+        $this->page->load();
     }
 }

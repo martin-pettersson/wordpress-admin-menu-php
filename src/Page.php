@@ -80,16 +80,18 @@ abstract class Page
     }
 
     /**
-     * Execute any logic at the page load-hook.
-     */
-    abstract public function load(): void;
-
-    /**
      * Produce a string representation of the page.
      *
      * @return string String representation of the page.
      */
     abstract public function render(): string;
+
+    /**
+     * Execute any logic at the page load-hook.
+     */
+    public function load(): void
+    {
+    }
 
     /**
      * Retrieve the parent page slug.

@@ -15,10 +15,6 @@ use N7e\WordPress\AdminMenu;
 
 final class Page extends AdminMenu\Page
 {
-    public function load(): void
-    {
-    }
-
     public function render(): string
     {
         return '';
